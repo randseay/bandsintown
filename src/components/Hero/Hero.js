@@ -5,10 +5,12 @@ import Button from "../Button/Button";
 
 function Hero({ band }) {
   return (
-    <div
-      className="hero"
-      style={{ backgroundImage: `url(${band?.image_url})` }}
-    >
+    <div className="hero">
+      <div
+        className="hero--bg"
+        style={{ backgroundImage: `url(${band?.image_url})` }}
+      />
+
       <div className="hero--info">
         <img src={band?.image_url} className="hero--image" alt="band-image" />
 

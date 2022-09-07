@@ -1,18 +1,30 @@
 .hero {
   align-items: center;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   border-radius: 0.25rem;
   color: #fff;
   display: flex;
   flex-direction: column;
   max-width: 550px;
+  overflow: hidden;
   padding: 1.875rem 3.125rem;
   position: relative;
   width: 100%;
+}
+
+.hero--bg {
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  bottom: 0;
+  filter: blur(0.5rem);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scale(1.1);
+  z-index: -1;
 }
 
 /* .hero:before {
@@ -68,11 +80,14 @@
 /* Screens above 1040px wide */
 @media screen and (min-width: 1040px) {
   .hero {
-    background-position: top;
     flex-direction: row;
     justify-content: space-between;
     max-width: 1000px;
     padding: 3.125rem 3.125rem;
+  }
+
+  .hero--bg {
+    background-position: top;
   }
 
   .hero--info {
