@@ -23,19 +23,24 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+*/
 
-@keyframes App-logo-spin {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-} */
+}
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 1rem;
+}
+
+.spinner {
+  animation: spin infinite 1s linear;
 }
