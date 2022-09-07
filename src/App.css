@@ -31,6 +31,7 @@ main {
   flex: 0;
 }
 
+/* Screens above 1040px wide */
 @media screen and (min-width: 1040px) {
   main {
     max-width: 1000px;

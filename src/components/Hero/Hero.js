@@ -12,12 +12,16 @@ function Hero({ band }) {
       />
 
       <div className="hero--info">
-        <img src={band?.image_url} className="hero--image" alt="band-image" />
+        <img
+          src={band?.image_url}
+          className="hero--image"
+          alt={`${band?.name} profile`}
+        />
 
         <div className="hero--summary">
           <h1 className="hero--name">
             {band?.name}
-            <img src={verified} alt="band-image" />
+            <img src={verified} alt="verified symbol" />
           </h1>
 
           <p className="hero--details">
