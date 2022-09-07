@@ -1,18 +1,46 @@
-import "./App.css";
+import { useState } from "react";
 
+import Button from "./components/Button/Button";
 import Hero from "./components/Hero";
 import Loader from "./components/Loader";
-import useFetch from "./hooks/useFetch";
+
+import useFetch from "./hooks/useFetchBand";
+
+import "./App.css";
 
 function App() {
-  const { data: bandData, loading } = useFetch(
-    "/artists/NEEDTOBREATHE?app_id=bands_in_town"
-  );
+  const [inputValue, setInputValue] = useState("");
+  const [bandName, setBandName] = useState("");
+
+  const { data: bandData, loading } = useFetch(bandName);
 
   return (
-    <div>
-      <main>{loading ? <Loader /> : <Hero band={bandData} />}</main>
-    </div>
+    <main>
+      <form
+        className="search"
+        onSubmit={(e) => {
+          e.preventDefault();
+          setBandName(inputValue);
+        }}
+      >
+        <input
+          className="search--input"
+          onChange={(e) => setInputValue(e.target.value)}
+          value={inputValue}
+          placeholder="Search for artists"
+        />
+
+        <Button type="submit">Search</Button>
+      </form>
+
+      {loading ? (
+        <Loader />
+      ) : !!bandData ? (
+        <Hero band={bandData} />
+      ) : (
+        <div>Search for a band</div>
+      )}
+    </main>
   );
 }
 

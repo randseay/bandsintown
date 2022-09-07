@@ -1,26 +1,26 @@
 import { useEffect, useState } from "react";
 
-function useFetch(url) {
+function useFetchBand(name) {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function fetchData() {
+    async function fetchData(bandName) {
       setLoading(true);
-      const response = await fetch(url);
+      const response = await fetch(`/artists/${bandName}?app_id=bands_in_town`);
       const data = await response.json();
 
       setData(data);
       setLoading(false);
     }
 
-    fetchData().catch((e) => {
-      setError(e);
-      setLoading(false);
-    });
-    // eslint-disable-next-line
-  }, []);
+    if (name && name.length > 0) {
+      fetchData(name).catch(setError);
+    }
+
+    setLoading(false);
+  }, [name]);
 
   return {
     data,
@@ -29,4 +29,4 @@ function useFetch(url) {
   };
 }
 
-export default useFetch;
+export default useFetchBand;
