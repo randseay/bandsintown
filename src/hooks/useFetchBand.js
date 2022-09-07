@@ -5,6 +5,8 @@ function useFetchBand(name) {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  const clearData = () => setData(null);
+
   useEffect(() => {
     async function fetchData(bandName) {
       setLoading(true);
@@ -26,6 +28,7 @@ function useFetchBand(name) {
     data,
     error,
     loading,
+    clearData,
   };
 }
 

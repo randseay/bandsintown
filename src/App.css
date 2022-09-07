@@ -31,6 +31,16 @@ main {
   flex: 0;
 }
 
+.search--clear {
+  color: #009696;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.search--clear:hover {
+  text-decoration: underline;
+}
+
 /* Screens above 1040px wide */
 @media screen and (min-width: 1040px) {
   main {
