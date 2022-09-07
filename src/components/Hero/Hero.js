@@ -22,11 +22,12 @@ function Hero({ band }) {
 
           <p className="hero--details">
             <span className="hero--followers">
-              {band?.tracker_count} Followers
+              {band?.tracker_count?.toLocaleString("en-US")} Followers
             </span>
 
             <span className="hero--shows">
-              {band?.upcoming_event_count} Upcoming Shows
+              {band?.upcoming_event_count?.toLocaleString("en-US")} Upcoming
+              Shows
             </span>
           </p>
         </div>
