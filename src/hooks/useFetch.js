@@ -13,6 +13,7 @@ function useFetch(url) {
     }
 
     fetchData().catch(setError);
+    // eslint-disable-next-line
   }, []);
 
   return {
