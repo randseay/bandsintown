@@ -31,7 +31,9 @@ function App() {
         />
 
         <div className="search--button">
-          <Button type="submit">Search</Button>
+          <Button type="submit" disabled={inputValue.length === 0}>
+            Search
+          </Button>
         </div>
       </form>
 
