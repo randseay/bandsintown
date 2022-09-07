@@ -1,23 +1,21 @@
-import logo from "./logo.svg";
 import "./App.css";
 
+import Hero from "./components/Hero/Hero";
+import useFetch from "./hooks/useFetch";
+
 function App() {
+  const { data: bandData, error } = useFetch(
+    "/artists/NEEDTOBREATHE?app_id=bands_in_town"
+  );
+
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </header> */}
+      <main>
+        <Hero band={bandData} />
+      </main>
     </div>
   );
 }

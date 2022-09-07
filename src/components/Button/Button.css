@@ -1,6 +1,6 @@
 .button {
   align-items: center;
-  border-radius: 2px;
+  border-radius: 0.125rem;
   background: #00b4b3;
   border: 1px solid #00b4b3;
   color: #fff;
@@ -10,7 +10,7 @@
   font-weight: 700;
   justify-content: center;
   margin: 0;
-  padding: 1rem 3rem;
+  padding: 0.625rem 3.25rem;
   text-decoration: none;
   -webkit-appearance: none;
   -moz-appearance: none;
