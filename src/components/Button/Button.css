@@ -1,0 +1,17 @@
+.button {
+  align-items: center;
+  border-radius: 2px;
+  background: #00b4b3;
+  border: 1px solid #00b4b3;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
