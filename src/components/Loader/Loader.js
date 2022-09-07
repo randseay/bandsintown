@@ -2,7 +2,7 @@ import "./Loader.css";
 
 function Loader() {
   return (
-    <div className="lds-facebook">
+    <div data-testid="loader" className="lds-facebook">
       <div />
       <div />
       <div />

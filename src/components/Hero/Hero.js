@@ -12,11 +12,7 @@ function Hero({ band }) {
       />
 
       <div className="hero--info">
-        <img
-          src={band?.image_url}
-          className="hero--image"
-          alt={`${band?.name} profile`}
-        />
+        <img src={band?.image_url} className="hero--image" alt="band avatar" />
 
         <div className="hero--summary">
           <h1 className="hero--name">
