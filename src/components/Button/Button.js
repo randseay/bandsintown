@@ -1,10 +1,12 @@
 import "./Button.css";
 
-function Button({ children, ...props }) {
+function Button({ as, children, ...props }) {
+  const Element = as || "button";
+
   return (
-    <button className="button" {...props}>
+    <Element className="button" {...props}>
       {children}
-    </button>
+    </Element>
   );
 }
 

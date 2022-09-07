@@ -43,7 +43,9 @@ function Hero({ band }) {
 
       <div className="hero--actions">
         {/* TODO: What should the follow button do? */}
-        <Button>Follow</Button>
+        <Button as="a" target="_blank" href={band?.url}>
+          Follow
+        </Button>
       </div>
     </div>
   );
