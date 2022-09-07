@@ -1,3 +1,27 @@
+# Bandsintown Demo | Rand Seay
+
+This project uses the public [Bandsintown API](https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0) to create a demo app.
+
+## Screenshots
+
+Small Screen
+
+![image](https://user-images.githubusercontent.com/4110122/188991517-f2c4e475-3b15-4e68-9441-ce4df3d50d00.png)
+
+![image](https://user-images.githubusercontent.com/4110122/188991488-7e87b3cf-8744-4753-b6dd-d72c414cc3da.png)
+
+Large screen
+
+![image](https://user-images.githubusercontent.com/4110122/188991754-5d90ba24-3adb-4768-8a96-85eaa1f4fc4a.png)
+
+![image](https://user-images.githubusercontent.com/4110122/188991587-64244e42-ec32-4cac-954e-8f0d6bf5f504.png)
+
+
+Screencast
+
+[Untitled_ Sep 7, 2022 3_06 PM.mov](https://user-images.githubusercontent.com/4110122/188992217-6bb3dd1b-f643-4407-98ee-452468d643a4.mov)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
