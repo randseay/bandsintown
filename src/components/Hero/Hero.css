@@ -55,6 +55,10 @@
   text-transform: uppercase;
 }
 
+.hero--verified {
+  margin-left: 0.3125rem;
+}
+
 .hero--details {
   align-items: center;
   display: flex;
