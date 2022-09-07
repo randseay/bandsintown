@@ -21,19 +21,24 @@ function Hero({ band }) {
           </h1>
 
           <p className="hero--details">
-            <span className="hero--followers">
-              {band?.tracker_count?.toLocaleString("en-US")} Followers
-            </span>
+            {!!band?.tracker_count && (
+              <span className="hero--followers">
+                {band?.tracker_count?.toLocaleString("en-US")} Followers
+              </span>
+            )}
 
-            <span className="hero--shows">
-              {band?.upcoming_event_count?.toLocaleString("en-US")} Upcoming
-              Shows
-            </span>
+            {!!band?.upcoming_event_count && (
+              <span className="hero--shows">
+                {band?.upcoming_event_count?.toLocaleString("en-US")} Upcoming
+                Shows
+              </span>
+            )}
           </p>
         </div>
       </div>
 
       <div className="hero--actions">
+        {/* TODO: What should the follow button do? */}
         <Button>Follow</Button>
       </div>
     </div>

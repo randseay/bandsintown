@@ -101,7 +101,7 @@
     margin-bottom: 0;
   }
 
-  .hero--followers:after {
+  .hero--shows:before {
     background: currentColor;
     border-radius: 50%;
     content: "";
