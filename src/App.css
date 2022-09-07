@@ -2,12 +2,16 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
+  margin: 0 auto;
+  padding: 1rem 1rem 0;
+  max-width: 550px;
+  width: 100%;
 }
 
 .search {
   display: flex;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .search--input {
@@ -21,4 +25,14 @@ main {
 
 .search--input:focus {
   outline-color: #00b4b3;
+}
+
+.search--button {
+  flex: 0;
+}
+
+@media screen and (min-width: 1040px) {
+  main {
+    max-width: 1000px;
+  }
 }

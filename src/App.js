@@ -30,7 +30,9 @@ function App() {
           placeholder="Search for artists"
         />
 
-        <Button type="submit">Search</Button>
+        <div className="search--button">
+          <Button type="submit">Search</Button>
+        </div>
       </form>
 
       {loading ? (

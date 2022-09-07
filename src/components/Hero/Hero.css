@@ -4,7 +4,6 @@
   color: #fff;
   display: flex;
   flex-direction: column;
-  max-width: 550px;
   overflow: hidden;
   padding: 1.875rem 3.125rem;
   position: relative;
@@ -26,16 +25,6 @@
   transform: scale(1.1);
   z-index: -1;
 }
-
-/* .hero:before {
-  bottom: 0;
-  content: " ";
-  backdrop-filter: blur(1rem);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-} */
 
 .hero--info {
   align-items: center;
@@ -82,7 +71,6 @@
   .hero {
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1000px;
     padding: 3.125rem 3.125rem;
   }
 
