@@ -40,7 +40,7 @@ function App() {
       ) : !!bandData ? (
         <Hero band={bandData} />
       ) : (
-        <div>Search for a band</div>
+        <div>Please search for a band</div>
       )}
     </main>
   );
