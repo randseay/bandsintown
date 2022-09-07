@@ -29,12 +29,16 @@ function App() {
           setBandName(inputValue);
         }}
       >
-        <input
-          className="search--input"
-          onChange={(e) => setInputValue(e.target.value)}
-          value={inputValue}
-          placeholder="Search for artists"
-        />
+        <label htmlFor="search" className="search--label">
+          <input
+            id="search"
+            name="search"
+            className="search--input"
+            onChange={(e) => setInputValue(e.target.value)}
+            value={inputValue}
+            placeholder="Search for artists"
+          />
+        </label>
 
         <div className="search--button">
           <Button type="submit" disabled={inputValue.length === 0}>
@@ -45,7 +49,7 @@ function App() {
 
       {loading ? (
         <Loader />
-      ) : !!bandData ? (
+      ) : bandData ? (
         <Hero band={bandData} />
       ) : (
         <p>Please search for a band</p>

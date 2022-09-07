@@ -10,6 +10,7 @@ function useFetchBand(name) {
   useEffect(() => {
     async function fetchData(bandName) {
       setLoading(true);
+      // NOTE: app_id=test did not work, so I found another app_id
       const response = await fetch(`/artists/${bandName}?app_id=bands_in_town`);
       const data = await response.json();
 
